@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pengaturan Surat | Dinkes Melawi</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="css/datepicker/bootstrap-datepicker3.standalone.min.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <div id="navbar_inc"></div>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <div id="sidebar_inc"></div>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper mt-5">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                  <i class="mdi mdi-settings"></i>
+                </span> Pengaturan Surat / Sifat Surat </span></h3>
+                <span><a class="btn btn-secondary p-2" href="setting-sifat-surat-tambah.html">+ Tambah</a></span>
+            </div>
+            <div class="row">
+                <div class="col-12 grid-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Daftar Sifat Surat</h4>
+                      <div class="table-responsive p-1">
+                        <table id="dataTable" class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th> Sifat Surat </th>
+                              <th> Kode </th>
+                              <th> Preview </th>
+                              <th> Aksi </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> Rahasia </td>
+                              <td> RHS </td>
+                              <td> 
+                                <label class="badge text-white" style="background-color: #ff112f;">RHS</label>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-info p-2" onclick="window.location.href='setting-sifat-surat-tambah.html'"><i class="mdi mdi-border-color menu-icon"></i></button>
+                                  <button type="button" class="btn btn-danger p-2"><i class="mdi mdi-delete menu-icon"></i></button>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td> Biasa </td>
+                                <td> BSA </td>
+                                <td> 
+                                  <label class="badge text-white" style="background-color: #f1f12f;">BSA</label>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info p-2" onclick="window.location.href='setting-sifat-surat-tambah.html'"><i class="mdi mdi-border-color menu-icon"></i></button>
+                                    <button type="button" class="btn btn-danger p-2"><i class="mdi mdi-delete menu-icon"></i></button>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <div id="footer_inc"></div>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- <script src="js/chart.js/Chart.min.js"></script> -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/file-upload.js"></script>
+    <!-- End custom js for this page -->
+    <!-- table filter -->
+    <!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#dataTable').DataTable();
+      });
+    </script> -->
+    <!-- End table filter -->
+    <!-- Include partials -->
+    <script src="js/_include.js"></script>
+    <script>
+        window.onload = function modal_include() {
+            partials_include("navbar_inc","_navbar.html");
+            partials_include("sidebar_inc","_sidebar.html");
+            partials_include("footer_inc","_footer.html");
+        }
+    </script>
+    <!-- End Include partials -->
+  </body>
+</html>
