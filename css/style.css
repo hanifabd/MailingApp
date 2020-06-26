@@ -13456,6 +13456,52 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   font-size: 18px;    
 }
 
+.log-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.log-grid-item {
+  text-align: center;
+  font-size: 18px;    
+}
+
+.log-img {
+  max-height: 36px;
+}
+
+.illust-img-hero {
+  width: 100%;  
+  overflow: hidden;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.sos {
+  font-size: 10px;
+  bottom: 0;
+}
+
+.p-c-5 {
+  padding: 3rem !important; }
+
+@media (max-width: 1355px) {
+  .hidden-mb {
+    display: none;
+  }
+  .log-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+@media (max-width: 960px) {
+  .p-c-5 {
+    padding: 1rem !important; }
+}
+
 .folder {
   max-width: 100%;
 }
